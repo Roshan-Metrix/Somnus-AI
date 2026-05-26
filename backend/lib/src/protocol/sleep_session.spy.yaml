@@ -1,0 +1,47 @@
+class: SleepSession
+table: sleep_sessions
+fields:
+  userId: int
+  bedTime: DateTime
+  wakeTime: DateTime?
+  sleepLatencyMinutes: int?
+  usedButler: bool
+  thoughtsProcessed: int
+  sleepQuality: int?
+  morningMood: String?
+  sessionDate: DateTime
+  
+  # Sleep Architecture
+  deepSleepDuration: int?
+  lightSleepDuration: int?
+  remSleepDuration: int?
+  awakeDuration: int?
+
+  # Recovery
+  restingHeartRate: int?
+  hrv: int?
+  respiratoryRate: int?
+  
+  # New Metrics
+  interruptions: int?
+  
+  # Health Platform Integration
+  sleepDataSource: String?       # 'manual', 'healthkit', 'healthconnect', device name
+  deviceType: String?             # 'watch', 'phone', 'band'
+  deviceModel: String?            # 'Apple Watch Series 9', 'Galaxy Watch 6'
+  recordingMethod: String?        # 'automatic', 'manual'
+  
+  # Enhanced Sleep Metrics
+  timeInBedMinutes: int?          # Total time from bedTime to wakeTime
+  sleepEfficiency: double?        # (total sleep / time in bed) * 100
+  unspecifiedSleepDuration: int?  # Sleep without stage classification
+  
+  # iOS-Specific (Apple Watch)
+  wristTemperature: double?       # Celsius
+
+indexes:
+  idx_sleep_sessions_data_source:
+    fields: sleepDataSource
+  idx_sleep_sessions_date_source:
+    fields: sessionDate, sleepDataSource
+

@@ -1,0 +1,55 @@
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Environment variables and secrets
+.env
+.env.*
+secrets.yaml
+config/passwords.yaml
+config/firebase_service_account_key.json
+ecs-trust-policy.json
+aws-deployment-state.json
+task-def-final.json
+deploy-aws-full.ps1
+run-migrations.ps1
+cleanup-all.ps1
+deploy_web.ps1.bak
+Dockerfile.bak
+build_log.txt
+build_log_utf8.txt
+
+# Production configuration (contains sensitive data)
+insomniabutler_server/config/production.yaml
+insomniabutler_flutter/assets/config.json
+
+# Tooling
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+build/
+
+# Node (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

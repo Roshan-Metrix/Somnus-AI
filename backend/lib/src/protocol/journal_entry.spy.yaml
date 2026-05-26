@@ -1,0 +1,19 @@
+class: JournalEntry
+table: journal_entries
+fields:
+  userId: int
+  title: String?
+  content: String
+  mood: String?
+  sleepSessionId: int?
+  tags: String?
+  isFavorite: bool, default=false
+  createdAt: DateTime
+  updatedAt: DateTime
+  entryDate: DateTime
+  embedding: Vector(768)?
+indexes:
+  journal_entries_embedding_idx:
+    fields: embedding
+    type: hnsw
+

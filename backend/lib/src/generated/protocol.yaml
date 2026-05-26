@@ -1,0 +1,63 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+jwtRefresh:
+  - refreshAccessToken:
+auth:
+  - register:
+  - login:
+  - getUserById:
+  - updatePreferences:
+  - updateUserProfile:
+  - deleteUser:
+  - getUserStats:
+dev:
+  - generateRealisticData:
+  - clearUserData:
+  - backfillEmbeddings:
+insights:
+  - getPersonalizedSleepInsights:
+  - getUserInsights:
+  - getWeeklyInsights:
+  - getThoughtCategoryBreakdown:
+  - getSleepTrend:
+  - getButlerEffectivenessScore:
+journal:
+  - createEntry:
+  - updateEntry:
+  - deleteEntry:
+  - getEntry:
+  - getUserEntries:
+  - searchEntries:
+  - toggleFavorite:
+  - getDailyPrompts:
+  - getAllPrompts:
+  - getJournalStats:
+  - getJournalInsights:
+  - seedPrompts:
+sleepSession:
+  - startSession:
+  - createSleepSession:
+  - endSession:
+  - markButlerUsed:
+  - getUserSessions:
+  - getActiveSession:
+  - getLastNightSession:
+  - getSessionForDate:
+  - updateSleepLatency:
+  - logManualSession:
+  - updateSession:
+  - deleteSession:
+  - updateMoodForLatestSession:
+thoughtClearing:
+  - processThought:
+  - getChatSessionMessages:
+  - getChatHistory:
+  - deleteChatSession:
+greeting:
+  - hello:

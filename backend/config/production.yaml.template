@@ -1,0 +1,17 @@
+# Production configuration for Serverpod Cloud
+# Most settings are automatically managed by the platform.
+
+apiServer:
+  port: 8080
+
+insightsServer:
+  port: 8081
+
+webServer:
+  port: 8082
+
+database:
+  requireSsl: true
+
+redis:
+  enabled: false
