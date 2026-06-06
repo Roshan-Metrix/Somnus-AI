@@ -206,3 +206,5 @@ The project is deployed via **Serverpod Cloud**, which handles infrastructure or
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+
+<!-- This is Somnus AI - 2026 -->
